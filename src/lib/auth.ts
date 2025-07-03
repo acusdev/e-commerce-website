@@ -1,21 +1,30 @@
-import { sendMail } from "@/actions/mail";
+import { sendMail } from "@/services/mail";
 import prisma from "@/lib/prisma";
 import { betterAuth } from "better-auth";
 import { prismaAdapter } from "better-auth/adapters/prisma";
-import { admin, oneTap, openAPI } from "better-auth/plugins";
+import { admin, openAPI } from "better-auth/plugins";
 
 export const auth = betterAuth({
   appName: "E-commerce Website",
   database: prismaAdapter(prisma, {
     provider: "postgresql",
   }),
+  user: {
+    additionalFields: {
+      role: {
+        type: "string",
+        required: false,
+        defaultValue: "user",
+        input: false,
+      },
+    },
+  },
   plugins: [
     openAPI(),
     admin({
       defaultRole: "user",
       adminRoles: ["admin"],
     }),
-    oneTap(),
   ],
   advanced: {
     cookiePrefix: "aew",
@@ -24,6 +33,13 @@ export const auth = betterAuth({
     cookieCache: {
       enabled: true,
       maxAge: 5 * 60,
+    },
+    additionalFields: {
+      role: {
+        type: "string",
+        required: false,
+        input: false,
+      },
     },
   },
   emailAndPassword: {
@@ -55,3 +71,4 @@ export const auth = betterAuth({
 });
 
 export type Session = typeof auth.$Infer.Session;
+export type User = typeof auth.$Infer.Session.user;

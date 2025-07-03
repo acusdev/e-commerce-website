@@ -1,0 +1,97 @@
+{
+  "components": {
+    "languageDropdown": {
+      "ctaText": "Chọn ngôn ngữ",
+      "loading": "Đang chuyển..."
+    }
+  },
+  "errors": {
+    "auth": {
+      "INVALID_EMAIL_OR_PASSWORD": "Tài khoản không tồn tại hoặc mật khẩu không đúng"
+    }
+  },
+  "signInPage": {
+    "meta": {
+      "title": "Đăng nhập",
+      "description": "Đăng nhập ngay vào Acus's Shop để trải nghiệm mua sắm trực tuyến"
+    },
+    "title": "Trang đăng nhập",
+    "subtitle": "Điền thông tin để tiếp tục sử dụng dịch vụ của cửa hàng",
+    "credentialsCtaText": "Tiếp tục đăng nhập",
+    "googleCtaText": "Đăng nhập với Google",
+    "facebookCtaText": "Đăng nhập với Facebook",
+    "loading": "Đang đăng nhập",
+    "email": {
+      "label": "Email",
+      "placeholder": "shop@gmail.com",
+      "required": "Email là bắt buộc",
+      "invalid": "Email không hợp lệ"
+    },
+    "password": {
+      "label": "Mật khẩu",
+      "forgotPassword": "Quên mật khẩu?",
+      "required": "Mật khẩu là bắt buộc"
+    },
+    "signUp": {
+      "text": "Bạn chưa có tài khoản?",
+      "ctaText": "Đăng ký ngay"
+    },
+    "sublabel": "Hoặc đăng nhập với",
+    "termsAndPrivacy": {
+      "text": "Bằng cách đăng nhập, bạn đồng ý với",
+      "termsCtaText": "Điều khoản dịch vụ",
+      "privacyCtaText": "Chính sách bảo mật",
+      "and": "và"
+    },
+    "success": {
+      "description": "Đăng nhập thành công!"
+    }
+  },
+  "signUpPage": {
+    "meta": {
+      "title": "Đăng ký",
+      "description": "Đăng ký ngay vào Acus's Shop để trải nghiệm mua sắm trực tuyến"
+    },
+    "title": "Trang đăng ký",
+    "subtitle": "Điền thông tin để tiếp tục sử dụng dịch vụ của cửa hàng",
+    "credentialsCtaText": "Tiếp tục đăng ký",
+    "googleCtaText": "Đăng nhập với Google",
+    "facebookCtaText": "Đăng nhập với Facebook",
+    "loading": "Đăng đăng ký",
+    "name": {
+      "label": "Họ và tên",
+      "placeholder": "Nguyễn Văn A",
+      "required": "Tên là bắt buộc"
+    },
+    "email": {
+      "label": "Email",
+      "placeholder": "shop@gmail.com",
+      "required": "Email là bắt buộc",
+      "invalid": "Email không hợp lệ"
+    },
+    "password": {
+      "label": "Mật khẩu",
+      "required": "Mật khẩu phải có ít nhất 8 ký tự"
+    },
+    "confirmPassword": {
+      "label": "Nhập lại mật khẩu",
+      "required": "Vui lòng xác nhận lại mật khẩu",
+      "notMatch": "Mật khẩu không khớp"
+    },
+    "signIn": {
+      "text": "Đã có tài khoản?",
+      "ctaText": "Đăng nhập ngay"
+    },
+    "sublabel": "Hoặc đăng nhập với",
+    "termsAndPrivacy": {
+      "text": "Bằng cách đăng ký, bạn đồng ý với",
+      "termsCtaText": "Điều khoản dịch vụ",
+      "privacyCtaText": "Chính sách bảo mật",
+      "and": "và"
+    },
+    "success": {
+      "title": "Đăng ký thành công!",
+      "description": "Kiểm tra email của bạn để xác thực tài khoản"
+    }
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "components": {
+    "languageDropdown": {
+      "ctaText": "Select language",
+      "loading": "Switching..."
+    }
+  },
+  "errors": {
+    "auth": {
+      "INVALID_EMAIL_OR_PASSWORD": "The account does not exist or the password is incorrect"
+    }
+  },
+  "signInPage": {
+    "meta": {
+      "title": "Sign in",
+      "description": "Sign in now to Acus's Shop to experience online shopping"
+    },
+    "title": "Sign in page",
+    "subtitle": "Fill in the information to use the shop's services.",
+    "credentialsCtaText": "Continue to sign in",
+    "googleCtaText": "Sign in with Google",
+    "facebookCtaText": "Sign in with Facebook",
+    "loading": "Signing in",
+    "email": {
+      "label": "Email",
+      "placeholder": "shop@gmail.com",
+      "required": "Email is required",
+      "invalid": "Email is invalid"
+    },
+    "password": {
+      "label": "Password",
+      "forgotPassword": "Forgot password?",
+      "required": "Password is required"
+    },
+    "signUp": {
+      "text": "Don't have an account?",
+      "ctaText": "Sign up now"
+    },
+    "sublabel": "Or sign in with",
+    "termsAndPrivacy": {
+      "text": "By signing in, you agree to our",
+      "termsCtaText": "Terms of service",
+      "privacyCtaText": "Privacy policy",
+      "and": "and"
+    },
+    "success": {
+      "description": "Signed in successfully!"
+    }
+  },
+  "signUpPage": {
+    "meta": {
+      "title": "Sign up",
+      "description": "Sign up now to Acus's Shop to experience online shopping"
+    },
+    "title": "Sign in page",
+    "subtitle": "Fill in the information to use the shop's services.",
+    "credentialsCtaText": "Continue to sign in",
+    "googleCtaText": "Sign in with Google",
+    "facebookCtaText": "Sign in with Facebook",
+    "loading": "Signing up",
+    "name": {
+      "label": "Full name",
+      "placeholder": "Nguyen Van A",
+      "required": "Name is required"
+    },
+    "email": {
+      "label": "Email",
+      "placeholder": "shop@gmail.com",
+      "required": "Email is required",
+      "invalid": "Email is invalid"
+    },
+    "password": {
+      "label": "Password",
+      "required": "Password is at least 8 characters"
+    },
+    "confirmPassword": {
+      "label": "Confirm password",
+      "required": "Confirm password is required",
+      "notMatch": "Passwords do not match"
+    },
+    "signIn": {
+      "text": "Already have an account?",
+      "ctaText": "Sign in now"
+    },
+    "sublabel": "Or sign in with",
+    "termsAndPrivacy": {
+      "text": "By signing up, you agree to our",
+      "termsCtaText": "Terms of service",
+      "privacyCtaText": "Privacy policy",
+      "and": "and"
+    },
+    "success": {
+      "title": "Signed up successfully!",
+      "description": "Please check your email to verify your account"
+    }
+  }
+}

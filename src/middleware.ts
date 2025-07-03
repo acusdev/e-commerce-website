@@ -1,10 +1,10 @@
 import { betterFetch } from "@better-fetch/fetch";
 import { NextResponse, type NextRequest } from "next/server";
 import type { Session } from "@/lib/auth";
+import { publicRoutes } from "@/types/route";
 
-const authRoutes = ["/signin", "/signup", "/email-verified"];
+const authRoutes = ["/sign-in", "/sign-up", "/email-verified"];
 const passwordRoutes = ["/reset-password", "/forgot-password"];
-const homeRoutes = ["/"];
 const adminRoutes = ["/admin"];
 
 export default async function authMiddleware(request: NextRequest) {
@@ -12,7 +12,7 @@ export default async function authMiddleware(request: NextRequest) {
   const isAuthRoute = authRoutes.includes(pathName);
   const isPasswordRoute = passwordRoutes.includes(pathName);
   const isAdminRoute = adminRoutes.includes(pathName);
-  const isHomeRoute = homeRoutes.includes(pathName);
+  const isPublicRoute = publicRoutes.includes(pathName);
 
   const { data: session } = await betterFetch<Session>("/api/auth/get-session", {
     baseURL: request.nextUrl.origin,
@@ -21,7 +21,7 @@ export default async function authMiddleware(request: NextRequest) {
     },
   });
 
-  if (isHomeRoute) {
+  if (isPublicRoute) {
     return NextResponse.next();
   }
 
@@ -29,7 +29,7 @@ export default async function authMiddleware(request: NextRequest) {
     if (isAuthRoute || isPasswordRoute) {
       return NextResponse.next();
     }
-    return NextResponse.redirect(new URL("/signin", request.url));
+    return NextResponse.redirect(new URL("/sign-in", request.url));
   }
 
   if (isAuthRoute || isPasswordRoute) {
@@ -44,5 +44,5 @@ export default async function authMiddleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/((?!api|_next/static|_next/image|favicon.ico).*)"],
+  matcher: ["/((?!api|_next/static|_next/image|.*\\.[a-zA-Z0-9]+$).*)"],
 };
